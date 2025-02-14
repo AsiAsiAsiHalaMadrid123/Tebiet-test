@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test -- Tebiet</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body{
+            background-color: rgb(212, 212, 212);
+        }
+        img{
+            border: 1px solid red;
+            border-radius: 10px;
+        }
+        div{
+            background-color: white;
+            width: 55vw;
+            margin: 5% auto;
+            border-radius: 15px;
+            padding: 25px;
+            -webkit-box-shadow: 0px 0px 68px 2px rgba(0,0,0,0.75);
+            -moz-box-shadow: 0px 0px 68px 2px rgba(0,0,0,0.75);
+            box-shadow: 0px 0px 68px 2px rgba(0,0,0,0.75);
+        }
+        input{
+            padding: 10px;
+            border-radius: 5px;
+            width: 12vw;
+        }
+        label{
+            color: rgb(58, 58, 173);
+            font-weight: bolder;
+            font-size: 20px;
+        }
+        button{
+            padding: 15px;
+            border: none;
+            background-color: rgb(49, 49, 226);
+            border-radius: 5px;
+            width: 10vw;
+            font-size: 20px;
+            transition: 0.3s;
+            color: white;
+        }
+        button:hover{
+            background-color: rgb(24, 24, 146);
+            cursor: pointer;
+        }
+        main{
+            background-color: rgba(0, 0, 0, 0.658);
+            width: 99vw;
+            height: 204vh;
+            position: absolute;
+            left: 0;
+            top: 0;
+            display: none;
+        }
+        nav{
+            background-color: rgb(255, 76, 76);
+            width: 50vw;
+            height: 40vh;
+            border-radius: 15px;
+            padding: 25px;
+            text-align: center;
+            padding-top: 8%;
+            font-size: 2vw;
+            color: white;
+            margin: 15% auto;
+            -webkit-box-shadow: 0px 0px 68px 2px rgba(0,0,0,0.75);
+            -moz-box-shadow: 0px 0px 68px 2px rgba(0,0,0,0.75);
+            box-shadow: 0px 0px 68px 2px rgba(0,0,0,0.75);
+        }
+        h1{
+            animation-name: a2;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes a2 {
+            0% {transform: scale(1);}
+            50% {transform: scale(1.1);}
+            100% {transform: scale(1);}
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <label for="bir">1. Elektrik cərəyanı ölçmək üçün biz nədən istifadə edə bilərik?</label> <br>
+        <input type="text" id="bir" name="bir" placeholder="..." autocomplete="off"> <br> <br> <br>
+
+        <label for="iki">2. Bu şəkildə nə görürük?  <br>    <img src="./2025-02-13_22-23-19.png" alt=""></label> <br>
+        <input type="text" id="iki" name="iki" placeholder="..." autocomplete="off"> <br> <br> <br>
+
+        <label for="uc">3. "Ən çox dəmir materiallı maddələr keçiricidir" cümləsi doğrudurmu?</label> <br>
+        <input type="text" id="uc" name="uc" placeholder="..." autocomplete="off"> <br> <br> <br>
+
+        <label for="dord">4. Hansı paraleldir? <br> 1) <img src="./2025-02-13_22-32-57.png" alt=""> 2) <img src="./2025-02-13_22-33-12.png" alt=""></label> <br>
+        <input type="number" id="dord" name="dord" placeholder="..." autocomplete="off"> <br> <br> <br>
+
+        <label for="bes">5. Xromotaqrafiya ayırma üsulu kimyəvidir?</label> <br>
+        <input type="text" id="bes" name="bes" placeholder="..." autocomplete="off"> <br> <br> <br>
+
+        <label for="alti">6. Hansı şəkildəki maddələri qarışdırsaq Homogen qarışığı alınar? <br> 1) <img src="./2025-02-13_22-45-57.png" alt=""> 2) <img src="./2025-02-13_22-46-32.png" alt=""></label> <br>
+        <input type="number" id="alti" name="alti" placeholder="..." autocomplete="off"> <br> <br> <br>
+
+        <label for="yeddi">7. Neft qarışıqdır?</label> <br>
+        <input type="text" id="yeddi" name="yeddi" placeholder="..." autocomplete="off"> <br> <br> <br>
+
+        <label for="sekkiz">8. hansı şprisi sıxmaq olar? Su ilə dolu yoxsa Hava? <br> <img src="./2025-02-13_23-00-03.png" alt=""></label> <br>
+        <input type="text" id="sekkiz" name="sekkiz" placeholder="..." autocomplete="off"> <br> <br> <br>
+
+        <label for="doqquz">9. Bu bakteriyanın adı nədir? <br> <img src="./2025-02-13_23-04-43.png" alt=""></label> <br>
+        <input type="text" id="doqquz" name="doqquz" placeholder="..." autocomplete="off"> <br> <br> <br>
+
+        <label for="on">10. Öskürək xəstəliyin əlamətidir?</label> <br>
+        <input type="text" id="on" name="on" placeholder="..." autocomplete="off"> <br> <br> <br>
+
+        <button onclick="testiq()">Təstiqlə</button>
+    </div>
+    <main>
+        <nav>
+            <h1>Düzgün cavabların sayı: </h1>
+        </nav>
+        <button style="margin-left: 45%;" onclick="cix()">Cavablara Bax!</button> <br>
+        <a href="./index.html"><button style="margin-left: 45%; margin-top: 1%;">Səhifəyə geri dön!</button></a>
+    </main>
+    <script>
+        function testiq() {
+            let bir = document.querySelector("#bir")
+            let iki = document.querySelector("#iki")
+            let uc = document.querySelector("#uc")
+            let dord = document.querySelector("#dord")
+            let bes = document.querySelector("#bes")
+            let alti = document.querySelector("#alti")
+            let yeddi = document.querySelector("#yeddi")
+            let sekkiz = document.querySelector("#sekkiz")
+            let doqquz = document.querySelector("#doqquz")
+            let on = document.querySelector("#on")
+            let counter = 0;
+            if (bir.value == "Ampermetr" || bir.value == "ampermetr") {
+                counter++
+            }
+            if (iki.value == "Elektrik Mator" || iki.value == "elektrik mator" || iki.value == "Elektrik mator") {
+                counter++
+            }
+            if (uc.value == "Beli" || uc.value == "beli" || uc.value == "Bəli" || uc.value == "bəli" || uc.value == "dogrudur" || uc.value == "doğrudur" || uc.value == "Doğrudur") {
+                counter++
+            }
+            if (dord.value == 2) {
+                counter++
+            }
+            if (bes.value == "Xeyr" || bes.value == "xeyr" || bes.value == "fizikidir" || bes.value == "Fizikidir") {
+                counter++
+            }
+            if (alti.value == 1) {
+                counter++
+            }
+            if (yeddi.value == "Beli" || yeddi.value == "beli" || yeddi.value == "qarisiqdir" || yeddi.value == "qarışıqdır" || yeddi.value == "bəli" || yeddi.value == "Bəli") {
+                counet++
+            }
+            if (sekkiz.value == "Hava ilə dolu" || sekkiz.value == "hava ile dolu" || sekkiz.value == "Hava ile dolu" || sekkiz.value == "Hava" || sekkiz.value == "hava") {
+                counter++
+            }
+            if (doqquz.value == "Spirilla" || doqquz.value == "spirilla") {
+                counter++
+            }
+            if (on.value == "Bəli" ||on.value == "bəli" || on.value == "beli" || on.value == "Beli") {
+                counter++
+            }
+            document.querySelector("h1").innerHTML = `Düzgün cavabların sayı: ${counter}/10`;
+            document.querySelector("main").style.display = "block";
+        }
+        function cix() {
+            document.querySelector("main").style.display="none"
+        }
+    </script>
+</body>
+</html>

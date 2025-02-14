@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tebiet Testin Baslatmaq -- Esas</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body{
+            background-color: rgb(212, 212, 212);
+        }
+        .con{
+            padding: 15px;
+            width: 60vw;
+            height: 45vh;
+            background-color: rgb(255, 255, 255);
+            text-align: center;
+            margin: 12% auto;
+            border-radius: 15px;
+            padding-top: 5%;
+            -webkit-box-shadow: 0px 0px 68px 2px rgba(0,0,0,0.75);
+            -moz-box-shadow: 0px 0px 68px 2px rgba(0,0,0,0.75);
+            box-shadow: 0px 0px 68px 2px rgba(0,0,0,0.75);
+        }
+        h1{
+            font-size: 3vw;
+            color: rgb(89, 89, 228);
+            animation-name: a1;
+            animation-duration: 1s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+        }
+        @keyframes a1 {
+            0% {transform: scale(1);}
+            50% {transform: scale(1.1);}
+            100% {transform: scale(1);}
+            500% {transform: scale(1.1);}
+            0% {transform: scale(1);}
+        }
+        p{
+            font-size: 25px;
+            text-decoration: 2px underline rgb(233, 39, 39);
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        button{
+            color: white;
+            padding: 15px;
+            border: none;
+            background-color: rgb(49, 49, 226);
+            border-radius: 5px;
+            width: 10vw;
+            font-size: 20px;
+            transition: 0.3s;
+        }
+        button:hover{
+            background-color: rgb(24, 24, 146);
+            cursor: pointer;
+        }
+        @media only screen and (max-width:1302px) {
+            .con{
+                height: 35vh;
+            }
+        }
+        @media only screen and (max-width:897px) {
+            .con{
+                height: 31vh;
+            }
+            h1{
+                font-size: 4vw;
+            }
+        }
+        @media only screen and (max-width:784px) {
+            p{
+                font-size: 20px;
+            }
+            button{
+                font-size: 18px;
+                width: 12vw;
+            }
+        }
+        @media only screen and (max-height:712px) {
+            .con{
+                height: 55vh;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="con">
+        <h1>Cəfərzadə Əli Təbiət Testi!</h1> <br>
+        <p>Başlamaq üçün aşağıdaki knopkaya bas!</p> <br> <br>
+        <a href="./index1.html"><button>Başla!</button></a>
+    </div>
+</body>
+</html>
